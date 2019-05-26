@@ -1,0 +1,7 @@
+[Plymouth Theme]
+Name=llama
+Description=llama theme
+ModuleName=script
+[script]
+ImageDir=/usr/share/plymouth/themes/blueos
+ScriptFile=/usr/share/plymouth/themes/blueos/blueos.script

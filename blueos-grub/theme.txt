@@ -1,0 +1,24 @@
+title-text: "BlueOS GRUB"
+title-color: "#FFFFFF"
+desktop-image: "background.png"
++ boot_menu {
+        left = 20%
+        top = 10%
+        width = 60%
+        height = 60%
+  
+        selected_item_color = "#7E7EFF"
+}
++ progress_bar {
+        left = 10%
+        top = 80%
+        width = 80%
+        height = 10%
+      
+        id = "__timeout__"
+        text = "@TIMEOUT_NOTIFICATION_LONG@"
+      
+        border_color = "#4B4BFF"
+	bg_color = "#3A3AEE"
+	fg_color = "#5C5CFF"
+}

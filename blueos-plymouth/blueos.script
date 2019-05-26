@@ -1,0 +1,57 @@
+//BASED ON LLAMA PLYMOUTH THEME
+//FEATURES (TOGGABLE):
+//Choose if the logo should spin:
+logo_spinning = false;
+
+//-----------------------------
+//Fetch Screen Height and Width
+screen_width=Window.GetWidth();
+screen_height=Window.GetHeight();
+
+//Wallpaper/Background
+wallpaper_image=Image("background.png");
+bg_image=wallpaper_image.Scale(screen_width,screen_height);
+wallpaper_sprite=Sprite(bg_image);
+wallpaper_sprite.SetZ(-100);
+
+//Logo Basic
+logo_image=Image("logo.png").Scale(screen_width / 5,screen_width / 5);
+logo_sprite=Sprite();
+logo_sprite.SetZ(100);
+logo_sprite.SetX(screen_width / 2 - screen_width / 10);
+logo_sprite.SetY(screen_height / 8);
+
+//---------------------------------------------------------
+//Spinner Basic
+spinner_image=Image("spinner.png").Scale(screen_width / 5 + screen_width / 20,screen_width / 5 + screen_width / 20);
+spinner_sprite=Sprite();
+spinner_sprite.SetX(screen_width / 2 - screen_width / 40 - screen_width / 10);
+spinner_sprite.SetY(screen_height / 8 - screen_width / 40);
+spinner_sprite.SetZ(99);
+
+//Spinner() and spin++
+spin = 0;
+fun refresh()
+{
+spin++;
+//-------------------
+
+//Spinner Spin
+spinner_sprite.SetImage(spinner_image.Rotate(spin / 20));
+
+//Logo Spin
+if (logo_spinning == true)
+{
+ logo_sprite.SetImage(logo_image.Rotate(spin / -40));
+} else {
+ logo_sprite.SetImage(logo_image);
+}
+//----
+} //Don't remove " } "!!!
+//----
+//-------------------
+//Modifications:
+
+
+//Call Refresh Function
+Plymouth.SetRefreshFunction (refresh);
