@@ -96,10 +96,14 @@ mkdir /mnt/tmp/install-essentials
 cp -a /etc/install-essentials/* /mnt/tmp/install-essentials
 #--
 echo "Preparing the recovery partition..."
-cp -a /etc/recovery/recovery.iso /mnt/boot/recovery
+# cp -a /etc/recovery/recovery.iso /mnt/boot/recovery
+pacstrap /mnt/boot/recovery base
 #--
 cp /root/postinst.sh /mnt/postinst.sh
 chmod +x /mnt/root/postinst.sh
+#--
+echo "Adding commands..."
+cp /etc/install-essentials/bin/* /bin/
 
 # Enter  Chroot
 echo "Soon entering a chroot-environment."
@@ -113,7 +117,7 @@ arch-chroot /mnt
 
 # True Post Install
 ### Commented out due to not working....
-#umount -a
+umount -a
 #echo "Rebooting in:"
 #echo "3"
 #sleep 1
@@ -122,4 +126,5 @@ arch-chroot /mnt
 #echo "1"
 #sleep 1
 #reboot
+echo "Done! You may now reboot and remove the installation-media (Ex: USB, CD)."
 fi

@@ -1,0 +1,16 @@
+#!/bin/bash
+# add wget
+
+cp out/blue.img tmp/blue.img
+cd tmp
+
+mkdir blue
+mount -w -o loop blue.img blue/
+cd blue
+
+bash blue.sh
+bash key.sh
+
+cd ..
+umount blue/
+rm -rf blue*
