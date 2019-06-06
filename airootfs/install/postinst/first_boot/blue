@@ -1,0 +1,16 @@
+#!/bin/bash
+cd /blue/install-essentials/yay
+(
+makepkg -si 
+exit
+) | su - blue
+cd /
+
+cp -av /blue/install-essentials/bin/* /bin/
+
+bash /blue/install-essentials/index.sh
+
+systemctl disable blue.service
+
+rm -rf /usr/bin/blue
+rm -rf /etc/systemd/system/blue.service
