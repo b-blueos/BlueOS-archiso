@@ -1,0 +1,145 @@
+[Totem]
+active-plugins=['skipto', 'vimeo', 'screenshot', 'save-file', 'apple-trailers', 'media_player_keys', 'recent', 'movie-properties', 'rotation', 'autoload-subtitles', 'screensaver', 'variable-rate']
+subtitle-encoding='UTF-8'
+
+[control-center]
+last-panel='region'
+
+[desktop/a11y/applications]
+screen-keyboard-enabled=false
+screen-reader-enabled=false
+
+[desktop/a11y/mouse]
+dwell-click-enabled=false
+dwell-threshold=10
+dwell-time=1.2
+secondary-click-enabled=false
+secondary-click-time=1.2
+
+[desktop/app-folders]
+folder-children=['Utilities', 'YaST']
+
+[desktop/app-folders/folders/Utilities]
+apps=['eog.desktop', 'gnome-abrt.desktop', 'gnome-system-log.desktop', 'gnome-system-monitor.desktop', 'gucharmap.desktop', 'nm-connection-editor.desktop', 'org.gnome.baobab.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.DejaDup.desktop', 'org.gnome.Dictionary.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.Evince.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.fonts.desktop', 'org.gnome.Screenshot.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.tweaks.desktop', 'seahorse.desktop', 'vinagre.desktop', 'yelp.desktop']
+categories=['X-GNOME-Utilities']
+name='X-GNOME-Utilities.directory'
+translate=true
+
+[desktop/app-folders/folders/YaST]
+categories=['X-SuSE-YaST']
+name='suse-yast.directory'
+translate=true
+
+[desktop/background]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///home/fabbe/Pictures/Wallpapers/background.png'
+primary-color='#000000'
+secondary-color='#000000'
+
+[desktop/calendar]
+show-weekdate=true
+
+[desktop/input-sources]
+current=uint32 0
+sources=[('xkb', 'se')]
+xkb-options=@as []
+
+[desktop/interface]
+clock-show-seconds=true
+clock-show-weekday=true
+cursor-theme='Adwaita'
+document-font-name='Noto Sans 11'
+enable-animations=true
+font-name='Noto Sans 11'
+gtk-im-module='gtk-im-context-simple'
+gtk-theme='Plata-Noir'
+icon-theme='Paper'
+monospace-font-name='Noto Sans Mono 10'
+show-battery-percentage=true
+toolkit-accessibility=false
+
+[desktop/notifications]
+application-children=['gnome-power-panel', 'org-gnome-tweaks', 'org-gnome-nautilus']
+
+[desktop/notifications/application/gnome-power-panel]
+application-id='gnome-power-panel.desktop'
+
+[desktop/notifications/application/org-gnome-nautilus]
+application-id='org.gnome.Nautilus.desktop'
+
+[desktop/notifications/application/org-gnome-tweaks]
+application-id='org.gnome.tweaks.desktop'
+
+[desktop/peripherals/touchpad]
+tap-to-click=true
+two-finger-scrolling-enabled=true
+
+[desktop/sound]
+allow-volume-above-100-percent=true
+
+[desktop/wm/preferences]
+button-layout='appmenu:minimize,maximize,close'
+num-workspaces=1
+titlebar-font='Noto Sans Bold 11'
+
+[eog/view]
+background-color='rgb(0,0,0)'
+use-background-color=true
+
+[epiphany/state]
+is-maximized=false
+window-position=(39, 29)
+window-size=(1024, 768)
+
+[evolution-data-server]
+migrated=true
+network-monitor-gio-name=''
+
+[gedit/plugins]
+active-plugins=['spell', 'modelines', 'time', 'docinfo', 'filebrowser']
+
+[gedit/plugins/filebrowser]
+root='file:///'
+tree-view=true
+virtual-root='file:///home/fabbe/.cinnamon/configs/menu@cinnamon.org'
+
+[gedit/preferences/ui]
+show-tabs-mode='auto'
+
+[gedit/state/window]
+bottom-panel-size=140
+side-panel-active-page='GeditWindowDocumentsPanel'
+side-panel-size=200
+size=(900, 700)
+state=87168
+
+[mutter]
+dynamic-workspaces=false
+
+[nautilus/preferences]
+default-folder-viewer='icon-view'
+search-filter-time-type='last_modified'
+search-view='list-view'
+
+[nautilus/window-state]
+initial-size=(890, 542)
+maximized=false
+
+[settings-daemon/peripherals/keyboard]
+numlock-state='on'
+
+[settings-daemon/plugins/xsettings]
+antialiasing='grayscale'
+hinting='slight'
+overrides={'Gtk/ShellShowsAppMenu': <0>, 'Gtk/DecorationLayout': <'menu:minimize,maximize,close'>}
+
+[shell]
+enabled-extensions=['apps-menu@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']
+favorite-apps=['org.gnome.Epiphany.desktop', 'evolution.desktop', 'rhythmbox.desktop', 'shotwell.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Software.desktop']
+
+[shell/extensions/user-theme]
+name='Plata-Noir'
+
+[software]
+check-timestamp=int64 1560277659
